@@ -1,0 +1,4 @@
+gspread
+nsetools 
+oauth2client
+PyOpenSSL

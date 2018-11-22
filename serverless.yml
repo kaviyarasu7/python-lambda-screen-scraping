@@ -1,0 +1,15 @@
+service: screen-scraper
+provider:
+  name: aws
+  runtime: python3.6
+  region: ap-south-1
+  environment:
+    MODE: "dev"
+functions:
+  pull_nse:
+    handler: handler.pull_nse
+plugins:
+  - serverless-python-requirements
+custom:
+  pythonRequirements:
+    dockerizePip: false
